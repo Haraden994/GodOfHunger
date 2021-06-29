@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 370809561
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 83abf8b29c8fc38428a2207f677eaa4f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5651999fa58938ac55fc849c3d2539bc
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Oculus/VR/Materials/BasicHandMaterial.mat
+- Assets/Low Poly Ultimate Pack/- Materials/Colors/36 GREEN.mat
+- Assets/Low Poly Ultimate Pack/- Materials/Colors/34 GREEN-DARK.mat
+- Assets/Oculus/SampleFramework/Core/HandsInteraction/Materials/TargetMaterial.mat
+- Assets/Low Poly Ultimate Pack/- Materials/Colors/9 BROWN-DARKEST.mat
+- Assets/Low Poly Ultimate Pack/- Materials/Colors/17 GREY-DARKEST.mat
+- Assets/Oculus/SampleFramework/Core/HandsInteraction/Materials/RayMaterial.mat
+- Assets/Low Poly Ultimate Pack/- Materials/Colors/20 GREY.mat
+- Assets/Oculus/SampleFramework/Core/HandsInteraction/Materials/PokeMaterial.mat
+- Assets/Low Poly Ultimate Pack/- Materials/Colors/21 GREY-LIGHT.mat
+Dependencies:
+- C:/Users/night/Desktop/God of Hunger/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/Users/night/Desktop/God of Hunger/OVRAssetBundles/OVRMasterBundle/asset_shader0
