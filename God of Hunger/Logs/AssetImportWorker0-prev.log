@@ -1,0 +1,1405 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro N; OS build 19042.1052; Version 2009; 64bit' Language: 'it' Physical Memory: 16319 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/night/Desktop/GodOfHunger/God of Hunger
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59127
+Successfully changed project path to: C:/Users/night/Desktop/GodOfHunger/God of Hunger
+C:/Users/night/Desktop/GodOfHunger/God of Hunger
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 103.44 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.79 ms.
+Initialize engine version: 2020.3.12f1 (b3b2c6512326)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/night/Desktop/GodOfHunger/God of Hunger/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 Ti (ID=0x1b06)
+    Vendor:   
+    VRAM:     11127 MB
+    Driver:   27.21.14.6647
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001637 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 92.95 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.978 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005577 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+[XR] OVRP version 1.61.0
+Mono: successfully reloaded assembly
+- Completed reload, in  0.987 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.06 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2224 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 116.8 MB.
+System memory in use after: 116.8 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 2644.
+Total: 1.992700 ms (FindLiveObjects: 0.171300 ms CreateObjectMapping: 0.076600 ms MarkObjects: 1.642100 ms  DeleteObjects: 0.101900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Animated/CharacterAnimator.controller
+  artifactKey: Guid(4db055772f4374049bc93ca52d36a82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/CharacterAnimator.controller using Guid(4db055772f4374049bc93ca52d36a82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '575e23a692a9e17ad48c69331b0cbff6') in 0.036415 seconds 
+  Import took 0.040008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 144.731908 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword run.fbx
+  artifactKey: Guid(9c5c2aaec2d433c4c89d921a4f7c8da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword run.fbx using Guid(9c5c2aaec2d433c4c89d921a4f7c8da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982facbc4343ee5baa5397abb2358056') in 0.052663 seconds 
+  Import took 0.056850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.053596 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword run (2).fbx
+  artifactKey: Guid(b3d3a19444f2bf34f8e3da31bb7b71cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword run (2).fbx using Guid(b3d3a19444f2bf34f8e3da31bb7b71cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d84d5c59a1ef40fb8b937cebe6b73d0') in 0.009210 seconds 
+  Import took 0.013707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 102.387423 seconds.
+  path: Assets/Scripts/Managers/CharacterAnimator.cs
+  artifactKey: Guid(5bbc4cefb1da402fa947a9d842e91e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Managers/CharacterAnimator.cs using Guid(5bbc4cefb1da402fa947a9d842e91e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e39e96ebff2bc56a479f1e977950ed2') in 0.011080 seconds 
+  Import took 0.014526 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005601 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.85 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.973 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.8 MB.
+System memory in use after: 112.9 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2649.
+Total: 2.012800 ms (FindLiveObjects: 0.169400 ms CreateObjectMapping: 0.075200 ms MarkObjects: 1.643500 ms  DeleteObjects: 0.123500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005779 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.978 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.9 MB.
+System memory in use after: 112.9 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2653.
+Total: 1.929500 ms (FindLiveObjects: 0.171700 ms CreateObjectMapping: 0.068400 ms MarkObjects: 1.618700 ms  DeleteObjects: 0.069900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005893 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.963 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.9 MB.
+System memory in use after: 113.0 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2657.
+Total: 1.959300 ms (FindLiveObjects: 0.148500 ms CreateObjectMapping: 0.065000 ms MarkObjects: 1.673800 ms  DeleteObjects: 0.071100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 264.357292 seconds.
+  path: Assets/Animated/SkeletonAnimator.overrideController
+  artifactKey: Guid(11aaea45c30c5d840b5c7d4e84384b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/SkeletonAnimator.overrideController using Guid(11aaea45c30c5d840b5c7d4e84384b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42bea702bb89e06ac06834a9f3ebc7dd') in 0.024766 seconds 
+  Import took 0.030102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.818294 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/sword and shield run (2).fbx
+  artifactKey: Guid(64c476a876e821b438f8901bcb89646b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/sword and shield run (2).fbx using Guid(64c476a876e821b438f8901bcb89646b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b601f7aea40ca58d8c8359c6213f982') in 0.020939 seconds 
+  Import took 0.025329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.580178 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/sword and shield run (2).fbx
+  artifactKey: Guid(64c476a876e821b438f8901bcb89646b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/sword and shield run (2).fbx using Guid(64c476a876e821b438f8901bcb89646b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa43ffcabd6c24c88c1364c0980cce6f') in 0.004875 seconds 
+  Import took 0.009188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.146551 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/sword and shield run (2).fbx
+  artifactKey: Guid(64c476a876e821b438f8901bcb89646b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/sword and shield run (2).fbx using Guid(64c476a876e821b438f8901bcb89646b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '561b290d169d336b43b6d7026d67365e') in 0.005567 seconds 
+  Import took 0.010383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.077738 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword walk.fbx
+  artifactKey: Guid(8d7feea4bb2fdfb41853241751c0de86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword walk.fbx using Guid(8d7feea4bb2fdfb41853241751c0de86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ea4c1ac27ace2d6901aa183975928a9') in 0.008794 seconds 
+  Import took 0.012403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000767 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword walk.fbx
+  artifactKey: Guid(8d7feea4bb2fdfb41853241751c0de86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword walk.fbx using Guid(8d7feea4bb2fdfb41853241751c0de86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ea4c1ac27ace2d6901aa183975928a9') in 0.004603 seconds 
+  Import took 0.008105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.206559 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword run (2).fbx
+  artifactKey: Guid(b3d3a19444f2bf34f8e3da31bb7b71cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword run (2).fbx using Guid(b3d3a19444f2bf34f8e3da31bb7b71cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74d8009b23f6bba0b188dbf933a8bfe7') in 0.005240 seconds 
+  Import took 0.009409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 165.795120 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/skeleton_Rig@Sword And Shield Walk.fbx
+  artifactKey: Guid(4b56de7c112149f4a9479881845331b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/skeleton_Rig@Sword And Shield Walk.fbx using Guid(4b56de7c112149f4a9479881845331b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c247803d90b6e8c6c3417a042684d933') in 0.128647 seconds 
+  Import took 0.132209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.288262 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/Sword And Shield Walk.fbx
+  artifactKey: Guid(4b56de7c112149f4a9479881845331b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/Sword And Shield Walk.fbx using Guid(4b56de7c112149f4a9479881845331b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd13516e1c597ca7f52c78bbd729ac1d') in 0.042390 seconds 
+  Import took 0.046574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.933131 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/Sword And Shield Walk.fbx
+  artifactKey: Guid(4b56de7c112149f4a9479881845331b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/Sword And Shield Walk.fbx using Guid(4b56de7c112149f4a9479881845331b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02220dd321b39fb873df6cfaadbaa642') in 0.032631 seconds 
+  Import took 0.036849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.066269 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/Sword And Shield Walk.fbx
+  artifactKey: Guid(4b56de7c112149f4a9479881845331b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/Sword And Shield Walk.fbx using Guid(4b56de7c112149f4a9479881845331b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8afe0b80fd95b297d38c027cf1757e4a') in 0.028719 seconds 
+  Import took 0.032314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.025825 seconds.
+  path: Assets/Animated/SkeletonAnimator.overrideController
+  artifactKey: Guid(11aaea45c30c5d840b5c7d4e84384b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/SkeletonAnimator.overrideController using Guid(11aaea45c30c5d840b5c7d4e84384b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f56be6563143d332d86d213aec5dab6') in 0.007136 seconds 
+  Import took 0.011338 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005992 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.61 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.165 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.63 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.9 MB.
+System memory in use after: 130.1 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 1.967900 ms (FindLiveObjects: 0.206800 ms CreateObjectMapping: 0.087600 ms MarkObjects: 1.576900 ms  DeleteObjects: 0.095700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 252.423392 seconds.
+  path: Assets/Animated/CharacterAnimator.controller
+  artifactKey: Guid(4db055772f4374049bc93ca52d36a82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/CharacterAnimator.controller using Guid(4db055772f4374049bc93ca52d36a82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9269ab87606923e3d034a71e5d94641') in 0.015143 seconds 
+  Import took 0.021587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.268422 seconds.
+  path: Assets/Animated/MainCharacterAnimator.controller
+  artifactKey: Guid(4db055772f4374049bc93ca52d36a82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/MainCharacterAnimator.controller using Guid(4db055772f4374049bc93ca52d36a82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d20f4e72b60a1a17f44dadab8c4e538') in 0.008944 seconds 
+  Import took 0.012837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.529024 seconds.
+  path: Assets/Animated/EnemyAnimator.controller
+  artifactKey: Guid(6afa83653eefcb249a85dc944150d99b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/EnemyAnimator.controller using Guid(6afa83653eefcb249a85dc944150d99b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e63737ee5fe8cd95c0fbe714f76bd02') in 0.007988 seconds 
+  Import took 0.012037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001207 seconds.
+  path: Assets/Animated/EnemyAnimator.controller
+  artifactKey: Guid(6afa83653eefcb249a85dc944150d99b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/EnemyAnimator.controller using Guid(6afa83653eefcb249a85dc944150d99b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e63737ee5fe8cd95c0fbe714f76bd02') in 0.003090 seconds 
+  Import took 0.006555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.755946 seconds.
+  path: Assets/Animated/MainCharacterAnimator 1.controller
+  artifactKey: Guid(9d5d6f84acd2a4a4d847524aa1590fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/MainCharacterAnimator 1.controller using Guid(9d5d6f84acd2a4a4d847524aa1590fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da92b079c0534e95de52ef60938b522') in 0.012586 seconds 
+  Import took 0.017154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.002700 seconds.
+  path: Assets/Animated/EnemyAnimator.controller
+  artifactKey: Guid(6afa83653eefcb249a85dc944150d99b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/EnemyAnimator.controller using Guid(6afa83653eefcb249a85dc944150d99b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34851a8976007d4d83c2c559d543a2e3') in 0.005477 seconds 
+  Import took 0.010674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001088 seconds.
+  path: Assets/Animated/EnemyAnimator.controller
+  artifactKey: Guid(6afa83653eefcb249a85dc944150d99b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/EnemyAnimator.controller using Guid(6afa83653eefcb249a85dc944150d99b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34851a8976007d4d83c2c559d543a2e3') in 0.002380 seconds 
+  Import took 0.005906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.358751 seconds.
+  path: Assets/Animated/EnemyAnimator.controller
+  artifactKey: Guid(9d5d6f84acd2a4a4d847524aa1590fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/EnemyAnimator.controller using Guid(9d5d6f84acd2a4a4d847524aa1590fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b2646ce26a4b62b09ba3cf3676f5e30') in 0.004797 seconds 
+  Import took 0.008755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.708574 seconds.
+  path: Assets/Animated/EnemyAnimator.controller
+  artifactKey: Guid(9d5d6f84acd2a4a4d847524aa1590fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/EnemyAnimator.controller using Guid(9d5d6f84acd2a4a4d847524aa1590fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57fb8a318ec89e8ddcf303071629f6d3') in 0.004252 seconds 
+  Import took 0.007779 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000649 seconds.
+  path: Assets/Animated/EnemyAnimator.controller
+  artifactKey: Guid(9d5d6f84acd2a4a4d847524aa1590fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/EnemyAnimator.controller using Guid(9d5d6f84acd2a4a4d847524aa1590fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57fb8a318ec89e8ddcf303071629f6d3') in 0.003950 seconds 
+  Import took 0.007445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 248.140793 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/sword and shield attack (2).fbx
+  artifactKey: Guid(18ac3e948a6962f42a98dd955308fcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/sword and shield attack (2).fbx using Guid(18ac3e948a6962f42a98dd955308fcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99a79e99c5338d8f74f2c53439eae270') in 0.023005 seconds 
+  Import took 0.028247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.504273 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/sword and shield attack.fbx
+  artifactKey: Guid(28f470fda2ca2bf4aa2c96ca00e44dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/sword and shield attack.fbx using Guid(28f470fda2ca2bf4aa2c96ca00e44dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b04fc8c60b861777f7879f921725fa') in 0.008386 seconds 
+  Import took 0.012265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000937 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/sword and shield attack.fbx
+  artifactKey: Guid(28f470fda2ca2bf4aa2c96ca00e44dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/sword and shield attack.fbx using Guid(28f470fda2ca2bf4aa2c96ca00e44dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b04fc8c60b861777f7879f921725fa') in 0.004871 seconds 
+  Import took 0.008680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.972743 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/sword and shield block idle.fbx
+  artifactKey: Guid(bbded5cb1c8a75f4e9aaa9ed0bd29d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/sword and shield block idle.fbx using Guid(bbded5cb1c8a75f4e9aaa9ed0bd29d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d7a15af6bc3dad4a7118c63de03717') in 0.010020 seconds 
+  Import took 0.013979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000950 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/sword and shield block idle.fbx
+  artifactKey: Guid(bbded5cb1c8a75f4e9aaa9ed0bd29d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/sword and shield block idle.fbx using Guid(bbded5cb1c8a75f4e9aaa9ed0bd29d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d7a15af6bc3dad4a7118c63de03717') in 0.004671 seconds 
+  Import took 0.008419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.725390 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/draw sword 1.fbx
+  artifactKey: Guid(e59944235f9bbaa4298625c2725354b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/draw sword 1.fbx using Guid(e59944235f9bbaa4298625c2725354b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '311ed96857067aa232ebaa3c8584fdb7') in 0.008885 seconds 
+  Import took 0.012717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/draw sword 1.fbx
+  artifactKey: Guid(e59944235f9bbaa4298625c2725354b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/draw sword 1.fbx using Guid(e59944235f9bbaa4298625c2725354b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '311ed96857067aa232ebaa3c8584fdb7') in 0.006514 seconds 
+  Import took 0.010176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.282452 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/sheath sword 1.fbx
+  artifactKey: Guid(f9ad3807bcfa42946ae27430d6e9e4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/sheath sword 1.fbx using Guid(f9ad3807bcfa42946ae27430d6e9e4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f93fba0f73cb77e6baf6267a6578e2d') in 0.009781 seconds 
+  Import took 0.013602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001227 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/sheath sword 1.fbx
+  artifactKey: Guid(f9ad3807bcfa42946ae27430d6e9e4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/sheath sword 1.fbx using Guid(f9ad3807bcfa42946ae27430d6e9e4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f93fba0f73cb77e6baf6267a6578e2d') in 0.005790 seconds 
+  Import took 0.010049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 113.335392 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/skeleton_Rig@Sword And Shield Slash (1).fbx
+  artifactKey: Guid(d1a299290ea912f4297b58f73ae1405c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/skeleton_Rig@Sword And Shield Slash (1).fbx using Guid(d1a299290ea912f4297b58f73ae1405c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45033f30f1cf6bc6290590556e539238') in 0.073783 seconds 
+  Import took 0.077237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.665758 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/skeleton_Rig@Sword And Shield Slash.fbx
+  artifactKey: Guid(9b9ba06793dc3ea43811af721275966a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/skeleton_Rig@Sword And Shield Slash.fbx using Guid(9b9ba06793dc3ea43811af721275966a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b3b84ee18e8d78f0ec0e3b7466b0dd') in 0.028972 seconds 
+  Import took 0.032536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.377411 seconds.
+  path: Assets/Animated/Lite Sword and Shield Pack/skeleton_Rig.fbx
+  artifactKey: Guid(e6b50d9fa815af342bc178f034b5bc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Lite Sword and Shield Pack/skeleton_Rig.fbx using Guid(e6b50d9fa815af342bc178f034b5bc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0b638092824ea69f5ca9719a5b22847') in 0.030244 seconds 
+  Import took 0.034068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.385521 seconds.
+  path: Assets/Animated/Sword and Shield Pack
+  artifactKey: Guid(55d0377929c3dea4eace3cc5dc8d7e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Sword and Shield Pack using Guid(55d0377929c3dea4eace3cc5dc8d7e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b9ed3685bd41078d08bafa12d26bae9') in 0.007239 seconds 
+  Import took 0.011374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 108.636361 seconds.
+  path: Assets/Animated/Sword and Shield Pack/skeleton_Rig@Sword And Shield Run.fbx
+  artifactKey: Guid(54d04333d3ddeb74593c7dd26f719005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Sword and Shield Pack/skeleton_Rig@Sword And Shield Run.fbx using Guid(54d04333d3ddeb74593c7dd26f719005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d969ae3fd8a64cf9b54735ca755c01') in 0.033083 seconds 
+  Import took 0.039085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.159344 seconds.
+  path: Assets/Animated/Sword and Shield Pack/skeleton_Rig@Sword And Shield Run.fbx
+  artifactKey: Guid(54d04333d3ddeb74593c7dd26f719005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Sword and Shield Pack/skeleton_Rig@Sword And Shield Run.fbx using Guid(54d04333d3ddeb74593c7dd26f719005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7645fa4c50a1096deae59bd2069dc39b') in 0.029583 seconds 
+  Import took 0.033157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.249568 seconds.
+  path: Assets/Animated/Sword and Shield Pack/skeleton_Rig@Sword And Shield Slash (1).fbx
+  artifactKey: Guid(d1a299290ea912f4297b58f73ae1405c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Sword and Shield Pack/skeleton_Rig@Sword And Shield Slash (1).fbx using Guid(d1a299290ea912f4297b58f73ae1405c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d8db1744221d813191198ecef19e96') in 0.031381 seconds 
+  Import took 0.035714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.675240 seconds.
+  path: Assets/Animated/Sword and Shield Pack/skeleton_Rig@Sword And Shield Slash.fbx
+  artifactKey: Guid(9b9ba06793dc3ea43811af721275966a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Sword and Shield Pack/skeleton_Rig@Sword And Shield Slash.fbx using Guid(9b9ba06793dc3ea43811af721275966a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75706c734e7a3c89e73c40b9acaff8ab') in 0.028813 seconds 
+  Import took 0.032265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.809525 seconds.
+  path: Assets/Animated/Sword and Shield Pack/skeleton_Rig.fbx
+  artifactKey: Guid(e6b50d9fa815af342bc178f034b5bc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Sword and Shield Pack/skeleton_Rig.fbx using Guid(e6b50d9fa815af342bc178f034b5bc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee3999a819bd265828edd3768404e368') in 0.026360 seconds 
+  Import took 0.029903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.820509 seconds.
+  path: Assets/Animated/Sword and Shield Pack/skeleton_Rig@Sword And Shield Run.fbx
+  artifactKey: Guid(54d04333d3ddeb74593c7dd26f719005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Sword and Shield Pack/skeleton_Rig@Sword And Shield Run.fbx using Guid(54d04333d3ddeb74593c7dd26f719005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c274360bb4e91bf0f1e327e155ad40') in 0.029443 seconds 
+  Import took 0.033210 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005860 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.002 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.0 MB.
+System memory in use after: 130.1 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2710.
+Total: 2.027200 ms (FindLiveObjects: 0.184300 ms CreateObjectMapping: 0.078700 ms MarkObjects: 1.691400 ms  DeleteObjects: 0.071900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005911 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.032 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.1 MB.
+System memory in use after: 130.3 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2714.
+Total: 2.185200 ms (FindLiveObjects: 0.184000 ms CreateObjectMapping: 0.073100 ms MarkObjects: 1.854100 ms  DeleteObjects: 0.073200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005728 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.046 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.1 MB.
+System memory in use after: 130.3 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2718.
+Total: 2.052400 ms (FindLiveObjects: 0.218200 ms CreateObjectMapping: 0.079400 ms MarkObjects: 1.677700 ms  DeleteObjects: 0.076200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007083 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.005 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.1 MB.
+System memory in use after: 130.3 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2722.
+Total: 1.975600 ms (FindLiveObjects: 0.195600 ms CreateObjectMapping: 0.080500 ms MarkObjects: 1.629300 ms  DeleteObjects: 0.069200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005646 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.35 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.039 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.1 MB.
+System memory in use after: 130.3 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2726.
+Total: 2.189800 ms (FindLiveObjects: 0.177800 ms CreateObjectMapping: 0.067500 ms MarkObjects: 1.864900 ms  DeleteObjects: 0.078700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005450 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.039 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.0 MB.
+System memory in use after: 130.2 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2730.
+Total: 2.016500 ms (FindLiveObjects: 0.194400 ms CreateObjectMapping: 0.080800 ms MarkObjects: 1.663500 ms  DeleteObjects: 0.076900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005396 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.037 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.1 MB.
+System memory in use after: 130.3 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2734.
+Total: 2.208400 ms (FindLiveObjects: 0.203300 ms CreateObjectMapping: 0.073200 ms MarkObjects: 1.857900 ms  DeleteObjects: 0.073100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005947 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.018 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.1 MB.
+System memory in use after: 130.3 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2738.
+Total: 2.005500 ms (FindLiveObjects: 0.179400 ms CreateObjectMapping: 0.076200 ms MarkObjects: 1.677500 ms  DeleteObjects: 0.071600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005542 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.032 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.1 MB.
+System memory in use after: 130.3 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2742.
+Total: 2.008900 ms (FindLiveObjects: 0.176400 ms CreateObjectMapping: 0.070800 ms MarkObjects: 1.688700 ms  DeleteObjects: 0.072300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007307 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.033 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.1 MB.
+System memory in use after: 130.3 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2746.
+Total: 2.181400 ms (FindLiveObjects: 0.205400 ms CreateObjectMapping: 0.085700 ms MarkObjects: 1.814200 ms  DeleteObjects: 0.075200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005547 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.999 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 2.02 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.1 MB.
+System memory in use after: 130.2 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2750.
+Total: 2.051400 ms (FindLiveObjects: 0.186900 ms CreateObjectMapping: 0.078400 ms MarkObjects: 1.711300 ms  DeleteObjects: 0.073800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005437 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.016 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.2 MB.
+System memory in use after: 130.3 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2754.
+Total: 1.827300 ms (FindLiveObjects: 0.175700 ms CreateObjectMapping: 0.071900 ms MarkObjects: 1.505100 ms  DeleteObjects: 0.073800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 759.003067 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword strafe (3).fbx
+  artifactKey: Guid(9236cb8e0b770be458257ae078034d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword strafe (3).fbx using Guid(9236cb8e0b770be458257ae078034d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2b9c3961135673327113840135595b8') in 0.054284 seconds 
+  Import took 0.060227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.875612 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword slash (2).fbx
+  artifactKey: Guid(0ffd88bda5b2b2f4289c0a2f1e4cfde2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword slash (2).fbx using Guid(0ffd88bda5b2b2f4289c0a2f1e4cfde2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c921d8a48287248a2e81c5433aac5f') in 0.009497 seconds 
+  Import took 0.013140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.487200 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword slash (3).fbx
+  artifactKey: Guid(fdea0dbe5483c03469ea56619ed56a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword slash (3).fbx using Guid(fdea0dbe5483c03469ea56619ed56a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e32f2fc4bf3b6a8e3825d198aa87de8') in 0.008766 seconds 
+  Import took 0.012348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000845 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword slash (3).fbx
+  artifactKey: Guid(fdea0dbe5483c03469ea56619ed56a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword slash (3).fbx using Guid(fdea0dbe5483c03469ea56619ed56a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e32f2fc4bf3b6a8e3825d198aa87de8') in 0.004827 seconds 
+  Import took 0.008257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.615424 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword slash (4).fbx
+  artifactKey: Guid(9be37a279b01de949969638d31c847ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword slash (4).fbx using Guid(9be37a279b01de949969638d31c847ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bd2d82db7cd6f1ecdb61c2854c76026') in 0.008388 seconds 
+  Import took 0.012013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword slash (4).fbx
+  artifactKey: Guid(9be37a279b01de949969638d31c847ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword slash (4).fbx using Guid(9be37a279b01de949969638d31c847ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bd2d82db7cd6f1ecdb61c2854c76026') in 0.005438 seconds 
+  Import took 0.009975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.099722 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword slash (5).fbx
+  artifactKey: Guid(a7869c1468c6f7b4597dc0c2f10c0e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword slash (5).fbx using Guid(a7869c1468c6f7b4597dc0c2f10c0e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1e588813dfb2571db1ad23602b70916') in 0.009079 seconds 
+  Import took 0.012666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword slash (5).fbx
+  artifactKey: Guid(a7869c1468c6f7b4597dc0c2f10c0e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword slash (5).fbx using Guid(a7869c1468c6f7b4597dc0c2f10c0e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1e588813dfb2571db1ad23602b70916') in 0.005032 seconds 
+  Import took 0.008621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.742135 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword slash.fbx
+  artifactKey: Guid(e83fa06418735a3468bc407b7b66f750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword slash.fbx using Guid(e83fa06418735a3468bc407b7b66f750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed588b2a9eafcc65cc21922db7fbbdce') in 0.010092 seconds 
+  Import took 0.014009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.642657 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword slide attack.fbx
+  artifactKey: Guid(d0d05cba6789351468c50a82cd619db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword slide attack.fbx using Guid(d0d05cba6789351468c50a82cd619db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbde8e60a9e8334e3b1d33cc99d27a4e') in 0.008162 seconds 
+  Import took 0.011801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword slide attack.fbx
+  artifactKey: Guid(d0d05cba6789351468c50a82cd619db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword slide attack.fbx using Guid(d0d05cba6789351468c50a82cd619db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbde8e60a9e8334e3b1d33cc99d27a4e') in 0.007096 seconds 
+  Import took 0.010968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.135124 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword strafe (2).fbx
+  artifactKey: Guid(7a30e888d289963459cffca95726bf32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword strafe (2).fbx using Guid(7a30e888d289963459cffca95726bf32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aca524e4581ccede675cf386c25733dd') in 0.009286 seconds 
+  Import took 0.013166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.853025 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword strafe.fbx
+  artifactKey: Guid(564ee149a2df6044783c430bf525d77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword strafe.fbx using Guid(564ee149a2df6044783c430bf525d77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eeb88ce0bcfe1ca548c28afb6678a8f') in 0.009110 seconds 
+  Import took 0.015130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000690 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword strafe.fbx
+  artifactKey: Guid(564ee149a2df6044783c430bf525d77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword strafe.fbx using Guid(564ee149a2df6044783c430bf525d77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eeb88ce0bcfe1ca548c28afb6678a8f') in 0.005050 seconds 
+  Import took 0.008833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.055241 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword turn (2).fbx
+  artifactKey: Guid(6c958d47aac007a4fa8c46137b085e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword turn (2).fbx using Guid(6c958d47aac007a4fa8c46137b085e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1acb05126b22e12fd1a7b924962988e8') in 0.008183 seconds 
+  Import took 0.012965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000947 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword turn (2).fbx
+  artifactKey: Guid(6c958d47aac007a4fa8c46137b085e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword turn (2).fbx using Guid(6c958d47aac007a4fa8c46137b085e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1acb05126b22e12fd1a7b924962988e8') in 0.005330 seconds 
+  Import took 0.009090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.117585 seconds.
+  path: Assets/Animated/Great Sword Pack/spell cast.fbx
+  artifactKey: Guid(fd8ee46296f425f45a7cce78d81fc43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/spell cast.fbx using Guid(fd8ee46296f425f45a7cce78d81fc43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddfb53e56fb9c2646c6e37d49ecb5981') in 0.008833 seconds 
+  Import took 0.012534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000998 seconds.
+  path: Assets/Animated/Great Sword Pack/spell cast.fbx
+  artifactKey: Guid(fd8ee46296f425f45a7cce78d81fc43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/spell cast.fbx using Guid(fd8ee46296f425f45a7cce78d81fc43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddfb53e56fb9c2646c6e37d49ecb5981') in 0.004770 seconds 
+  Import took 0.008340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.286462 seconds.
+  path: Assets/Animated/Great Sword Pack/two handed sword death (2).fbx
+  artifactKey: Guid(67ebb6dbde8ff0146ba616ad6d602287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/two handed sword death (2).fbx using Guid(67ebb6dbde8ff0146ba616ad6d602287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0cfb2da841ac148bd3e4b6d8ea909a9') in 0.009237 seconds 
+  Import took 0.012856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000629 seconds.
+  path: Assets/Animated/Great Sword Pack/two handed sword death (2).fbx
+  artifactKey: Guid(67ebb6dbde8ff0146ba616ad6d602287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/two handed sword death (2).fbx using Guid(67ebb6dbde8ff0146ba616ad6d602287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0cfb2da841ac148bd3e4b6d8ea909a9') in 0.005205 seconds 
+  Import took 0.008770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.684575 seconds.
+  path: Assets/Animated/Great Sword Pack/two handed sword death.fbx
+  artifactKey: Guid(e04b1da159a3f6047aec1176c44859d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/two handed sword death.fbx using Guid(e04b1da159a3f6047aec1176c44859d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0023ddb7733f78d1cefb86c9363c382f') in 0.010098 seconds 
+  Import took 0.014376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002263 seconds.
+  path: Assets/Animated/Great Sword Pack/two handed sword death.fbx
+  artifactKey: Guid(e04b1da159a3f6047aec1176c44859d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/two handed sword death.fbx using Guid(e04b1da159a3f6047aec1176c44859d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0023ddb7733f78d1cefb86c9363c382f') in 0.006037 seconds 
+  Import took 0.010507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.602920 seconds.
+  path: Assets/Animated/Great Sword Pack/woman-metalhead_Rig.fbx
+  artifactKey: Guid(3fd9744ca63c84246846568a67ef0438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/woman-metalhead_Rig.fbx using Guid(3fd9744ca63c84246846568a67ef0438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0327e3447661de8e006580be39b0570') in 0.066456 seconds 
+  Import took 0.070094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.991431 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword high spin attack.fbx
+  artifactKey: Guid(ed917b27ea8e4434b94c5bf77771579c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword high spin attack.fbx using Guid(ed917b27ea8e4434b94c5bf77771579c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '031892384e2444850ae40b628f6443c5') in 0.010318 seconds 
+  Import took 0.014040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.518278 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword kick (2).fbx
+  artifactKey: Guid(e37b7cdac04a4c944be43ae8cb82f605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword kick (2).fbx using Guid(e37b7cdac04a4c944be43ae8cb82f605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '764e916c9f4b48418db7c8a0f7990fb7') in 0.008285 seconds 
+  Import took 0.012250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000652 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword kick (2).fbx
+  artifactKey: Guid(e37b7cdac04a4c944be43ae8cb82f605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword kick (2).fbx using Guid(e37b7cdac04a4c944be43ae8cb82f605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '764e916c9f4b48418db7c8a0f7990fb7') in 0.006213 seconds 
+  Import took 0.009755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.502358 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword kick.fbx
+  artifactKey: Guid(f73327afd370182409cb7b432e70d0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword kick.fbx using Guid(f73327afd370182409cb7b432e70d0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e1678a8ab3895802dcc9261d58c638') in 0.008686 seconds 
+  Import took 0.012279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000532 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword kick.fbx
+  artifactKey: Guid(f73327afd370182409cb7b432e70d0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword kick.fbx using Guid(f73327afd370182409cb7b432e70d0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e1678a8ab3895802dcc9261d58c638') in 0.004693 seconds 
+  Import took 0.008179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.977180 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword attack.fbx
+  artifactKey: Guid(01b0af8abe058e140b8909e5e972a36e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword attack.fbx using Guid(01b0af8abe058e140b8909e5e972a36e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3aad4bdd9f98ebee573b0ab62bd3187') in 0.009112 seconds 
+  Import took 0.012794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000733 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword attack.fbx
+  artifactKey: Guid(01b0af8abe058e140b8909e5e972a36e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword attack.fbx using Guid(01b0af8abe058e140b8909e5e972a36e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3aad4bdd9f98ebee573b0ab62bd3187') in 0.005949 seconds 
+  Import took 0.009587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.015852 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword 180 turn.fbx
+  artifactKey: Guid(be61bc36ceb70804384490b30d039052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword 180 turn.fbx using Guid(be61bc36ceb70804384490b30d039052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828b7b800f0525629a59185cd1038115') in 0.008394 seconds 
+  Import took 0.012070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000919 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword 180 turn.fbx
+  artifactKey: Guid(be61bc36ceb70804384490b30d039052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword 180 turn.fbx using Guid(be61bc36ceb70804384490b30d039052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828b7b800f0525629a59185cd1038115') in 0.004922 seconds 
+  Import took 0.008859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.080828 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword blocking (2).fbx
+  artifactKey: Guid(81577b4d23196434fbaad578a234d5f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword blocking (2).fbx using Guid(81577b4d23196434fbaad578a234d5f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '870802bf14741bf1fcf4c27eb6c8e410') in 0.009121 seconds 
+  Import took 0.013040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.968999 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword blocking (3).fbx
+  artifactKey: Guid(22293f1ca9ebdd7409efed2983fc873e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword blocking (3).fbx using Guid(22293f1ca9ebdd7409efed2983fc873e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44fb46a016d453685e5cabacba1cd037') in 0.008232 seconds 
+  Import took 0.012888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001144 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword blocking (3).fbx
+  artifactKey: Guid(22293f1ca9ebdd7409efed2983fc873e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword blocking (3).fbx using Guid(22293f1ca9ebdd7409efed2983fc873e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44fb46a016d453685e5cabacba1cd037') in 0.004530 seconds 
+  Import took 0.008268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.490088 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword blocking.fbx
+  artifactKey: Guid(383453084e2f72545970d381d8b1db78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword blocking.fbx using Guid(383453084e2f72545970d381d8b1db78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e595c955c099d16bec1c333fd17bec') in 0.009247 seconds 
+  Import took 0.012870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000819 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword blocking.fbx
+  artifactKey: Guid(383453084e2f72545970d381d8b1db78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword blocking.fbx using Guid(383453084e2f72545970d381d8b1db78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e595c955c099d16bec1c333fd17bec') in 0.004747 seconds 
+  Import took 0.008319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.307518 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword casting.fbx
+  artifactKey: Guid(3e0d353148ed7fe4abbc0ed099bd0741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword casting.fbx using Guid(3e0d353148ed7fe4abbc0ed099bd0741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4babfa069e45d20c95c18514f9871f3') in 0.010121 seconds 
+  Import took 0.013787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002331 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword casting.fbx
+  artifactKey: Guid(3e0d353148ed7fe4abbc0ed099bd0741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword casting.fbx using Guid(3e0d353148ed7fe4abbc0ed099bd0741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4babfa069e45d20c95c18514f9871f3') in 0.005143 seconds 
+  Import took 0.008765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.512854 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword crouching.fbx
+  artifactKey: Guid(101cedf51ac516046bfe716eda1a356e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword crouching.fbx using Guid(101cedf51ac516046bfe716eda1a356e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c17316b6493a3938d9a17348c8e9e0') in 0.009226 seconds 
+  Import took 0.012836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001115 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword crouching.fbx
+  artifactKey: Guid(101cedf51ac516046bfe716eda1a356e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword crouching.fbx using Guid(101cedf51ac516046bfe716eda1a356e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c17316b6493a3938d9a17348c8e9e0') in 0.004739 seconds 
+  Import took 0.008404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.865393 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword crouching (2).fbx
+  artifactKey: Guid(d3c295cb964a584458e86ef4ec48722e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword crouching (2).fbx using Guid(d3c295cb964a584458e86ef4ec48722e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47b3bb410ed7eae338200d4d47ae39bb') in 0.009544 seconds 
+  Import took 0.013494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000770 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword crouching (2).fbx
+  artifactKey: Guid(d3c295cb964a584458e86ef4ec48722e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword crouching (2).fbx using Guid(d3c295cb964a584458e86ef4ec48722e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47b3bb410ed7eae338200d4d47ae39bb') in 0.005981 seconds 
+  Import took 0.013656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.775964 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword crouching (3).fbx
+  artifactKey: Guid(0a8d8b21178c24f4280d66f3552f91ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword crouching (3).fbx using Guid(0a8d8b21178c24f4280d66f3552f91ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '299e588d247cb486c2a1583900d57f3d') in 0.009337 seconds 
+  Import took 0.013104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001456 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword crouching (3).fbx
+  artifactKey: Guid(0a8d8b21178c24f4280d66f3552f91ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword crouching (3).fbx using Guid(0a8d8b21178c24f4280d66f3552f91ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '299e588d247cb486c2a1583900d57f3d') in 0.005561 seconds 
+  Import took 0.009931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.357580 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword crouching (4).fbx
+  artifactKey: Guid(c9b3c668eb8cec84e8bc44d05bce9c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword crouching (4).fbx using Guid(c9b3c668eb8cec84e8bc44d05bce9c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f37e0e9618ac0a390e53e7ea14013b') in 0.009739 seconds 
+  Import took 0.013644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000653 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword crouching (4).fbx
+  artifactKey: Guid(c9b3c668eb8cec84e8bc44d05bce9c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword crouching (4).fbx using Guid(c9b3c668eb8cec84e8bc44d05bce9c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f37e0e9618ac0a390e53e7ea14013b') in 0.005913 seconds 
+  Import took 0.009767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.817606 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword crouching (6).fbx
+  artifactKey: Guid(be4c1af9006c25c4aac8517c100c47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword crouching (6).fbx using Guid(be4c1af9006c25c4aac8517c100c47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d52a516ffb1834dcc974c60834f5cb') in 0.008127 seconds 
+  Import took 0.011946 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000666 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword crouching (6).fbx
+  artifactKey: Guid(be4c1af9006c25c4aac8517c100c47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword crouching (6).fbx using Guid(be4c1af9006c25c4aac8517c100c47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d52a516ffb1834dcc974c60834f5cb') in 0.004677 seconds 
+  Import took 0.008738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.869632 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword jump.fbx
+  artifactKey: Guid(28ef8790906d19a419d605917669f3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword jump.fbx using Guid(28ef8790906d19a419d605917669f3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a2a34b03fe926e2931869c4e220bef4') in 0.011629 seconds 
+  Import took 0.015416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000595 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword jump.fbx
+  artifactKey: Guid(28ef8790906d19a419d605917669f3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword jump.fbx using Guid(28ef8790906d19a419d605917669f3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a2a34b03fe926e2931869c4e220bef4') in 0.005071 seconds 
+  Import took 0.009067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.992871 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword jump attack.fbx
+  artifactKey: Guid(f9d6ff9cb0223aa4684ee20e41ff7da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword jump attack.fbx using Guid(f9d6ff9cb0223aa4684ee20e41ff7da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '555f29a3abdeb4d9663b590178eb0704') in 0.008427 seconds 
+  Import took 0.012282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000787 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword jump attack.fbx
+  artifactKey: Guid(f9d6ff9cb0223aa4684ee20e41ff7da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword jump attack.fbx using Guid(f9d6ff9cb0223aa4684ee20e41ff7da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '555f29a3abdeb4d9663b590178eb0704') in 0.005102 seconds 
+  Import took 0.008841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.645110 seconds.
+  path: Assets/Animated/Great Sword Pack/great sword jump (2).fbx
+  artifactKey: Guid(69386fda6a3ce6847861b7039111f585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated/Great Sword Pack/great sword jump (2).fbx using Guid(69386fda6a3ce6847861b7039111f585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1279109ebdaa4f8d995851b95add2b47') in 0.008455 seconds 
+  Import took 0.012403 seconds .
+

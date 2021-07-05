@@ -614,10 +614,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.9211649
-  m_Height: 1.9759498
+  m_Radius: 0.29459113
+  m_Height: 1.7484212
   m_Direction: 1
-  m_Center: {x: 0.00021505379, y: 0.865512, z: -0.023785919}
+  m_Center: {x: 0, y: 1.0057893, z: 0}
 --- !u!1 &8962425923601867747
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,10 +661,10 @@ Animator:
   m_GameObject: {fileID: 8962425923601867747}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 649e49daf045ac744afb90e152185b3d, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4db055772f4374049bc93ca52d36a82c, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -1039,6 +1039,81 @@ Transform:
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
   m_Children:
   - {fileID: 8962425923602038685}
+  - {fileID: 4583444242251445296}
   m_Father: {fileID: 8962425923602038681}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4228088059540894512
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8962425923602038687}
+    m_Modifications:
+    - target: {fileID: 375634890260317952, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375634890260317952, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 375634890260317952, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 375634890260317952, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 375634890260317952, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 375634890260317952, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.084
+      objectReference: {fileID: 0}
+    - target: {fileID: 375634890260317952, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.069
+      objectReference: {fileID: 0}
+    - target: {fileID: 375634890260317952, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7951806
+      objectReference: {fileID: 0}
+    - target: {fileID: 375634890260317952, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.24652028
+      objectReference: {fileID: 0}
+    - target: {fileID: 375634890260317952, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.121366374
+      objectReference: {fileID: 0}
+    - target: {fileID: 375634890260317952, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.54054207
+      objectReference: {fileID: 0}
+    - target: {fileID: 375634890260317952, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -31.551
+      objectReference: {fileID: 0}
+    - target: {fileID: 375634890260317952, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -4.947
+      objectReference: {fileID: 0}
+    - target: {fileID: 375634890260317952, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 69.812
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044084550256680378, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+      propertyPath: m_Name
+      value: GreatSword
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+--- !u!4 &4583444242251445296 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 375634890260317952, guid: 67ca38a283a728e44a31ebc3a1a7d374, type: 3}
+  m_PrefabInstance: {fileID: 4228088059540894512}
+  m_PrefabAsset: {fileID: 0}
