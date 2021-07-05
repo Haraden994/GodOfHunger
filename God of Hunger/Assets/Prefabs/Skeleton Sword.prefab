@@ -251,6 +251,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bbc4cefb1da402fa947a9d842e91e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  replaceableAttackAnim: {fileID: -203655887218126122, guid: 9b9ba06793dc3ea43811af721275966a, type: 3}
+  defaultAttackAnimSet:
+  - {fileID: -203655887218126122, guid: 9b9ba06793dc3ea43811af721275966a, type: 3}
+  - {fileID: 3759777152582214702, guid: d1a299290ea912f4297b58f73ae1405c, type: 3}
+  overrideController: {fileID: 0}
 --- !u!195 &6609146376326889493
 NavMeshAgent:
   m_ObjectHideFlags: 0

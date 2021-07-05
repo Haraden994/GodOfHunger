@@ -5,18 +5,19 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterStats))]
 public class CharacterCombat : MonoBehaviour
 {
-    public float attackDelay = 0.6f;
-    
     private float attackCooldown = 0f;
 
     public event System.Action OnAttack;
     
     private CharacterStats myStats;
-    
+    private CharacterStats opponentStats;
+    private CharacterAnimator chAnimator;
+
     // Start is called before the first frame update
     void Start()
     {
         myStats = GetComponent<CharacterStats>();
+        chAnimator = GetComponent<CharacterAnimator>();
     }
 
     // Update is called once per frame
@@ -29,19 +30,17 @@ public class CharacterCombat : MonoBehaviour
     {
         if (attackCooldown <= 0f)
         {
-            StartCoroutine(DoDamage(targetStats, attackDelay));
-
+            opponentStats = targetStats;
             if (OnAttack != null)
                 OnAttack();
 
-            attackCooldown = 1f / myStats.attackSpeed.GetValue();
+            // The attack speed is based on the animation length so higher attack speed wont make animations overlap
+            attackCooldown = chAnimator.GetAttackClipDuration() / myStats.attackSpeed.GetValue();
         }
     }
 
-    IEnumerator DoDamage(CharacterStats stats, float delay)
+    public void AttackHitEvent()
     {
-        yield return new WaitForSeconds(delay);
-        
-        stats.TakeDamage(myStats.damage.GetValue());
+        opponentStats.TakeDamage(myStats.damage.GetValue());
     }
 }

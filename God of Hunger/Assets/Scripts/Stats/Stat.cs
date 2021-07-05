@@ -15,7 +15,7 @@ public class Stat
     {
         float finalValue = baseValue;
         modifiers.ForEach(x => finalValue += x);
-        return baseValue;
+        return finalValue;
     }
 
     public void AddModifier(float modifier)
