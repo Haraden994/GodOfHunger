@@ -12,6 +12,8 @@ public struct Gesture
     public string name;
     public List<Vector3> fingerDatas;
     public UnityEvent onRecognized;
+    public UnityEvent onHold;
+    public UnityEvent onChange;
 }
 
 public class GestureDetector : MonoBehaviour
@@ -21,25 +23,29 @@ public class GestureDetector : MonoBehaviour
     public float threshold = 0.1f;
     public OVRSkeleton skeleton;
     public List<Gesture> gestures;
+    
     private List<OVRBone> fingerBones;
     private Gesture previousGesture;
     private bool bonesInitialized;
+    private bool gestureChange;
+
+    private Gesture currentGesture;
     
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         StartCoroutine(BonesDelay(2.5f, InitializeBones));
         
         previousGesture = new Gesture();
     }
 
-    public IEnumerator BonesDelay(float delay, Action toDo)
+    private IEnumerator BonesDelay(float delay, Action toDo)
     {
         yield return new WaitForSeconds(delay);
         toDo.Invoke();
     }
 
-    void InitializeBones()
+    private void InitializeBones()
     {
         fingerBones = new List<OVRBone>(skeleton.Bones);
 
@@ -48,7 +54,7 @@ public class GestureDetector : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (bonesInitialized)
         {
@@ -64,19 +70,39 @@ public class GestureDetector : MonoBehaviour
                         Save();
             }
 
-            Gesture currentGesture = Recognize();
+            currentGesture = Recognize();
+            // check if a saved gesture has been recognized
             bool hasRecognized = !currentGesture.Equals(new Gesture());
 
-            if (hasRecognized && !currentGesture.Equals(previousGesture))
+            if (hasRecognized)
             {
-                Debug.Log("New Gesture Found: " + currentGesture.name);
-                previousGesture = currentGesture;
-                currentGesture.onRecognized.Invoke();
+                if (!currentGesture.Equals(previousGesture))
+                {
+                    gestureChange = true;
+                    Debug.Log("New Gesture Found: " + currentGesture.name);
+                    previousGesture = currentGesture;
+                    currentGesture.onRecognized.Invoke();
+                }
+                else
+                {
+                    Debug.Log("OnHold");
+                    currentGesture.onHold.Invoke();
+                }
+            }
+            else
+            {
+                if (gestureChange)
+                {
+                    Debug.Log("OnChange");
+                    gestureChange = false;
+                    previousGesture.onChange.Invoke();
+                    previousGesture = new Gesture();
+                }
             }
         }
     }
 
-    void Save()
+    private void Save()
     {
         Gesture g = new Gesture();
         g.name = "New Gesture";
@@ -92,9 +118,9 @@ public class GestureDetector : MonoBehaviour
         Debug.Log("New Gesture Added!");
     }
 
-    Gesture Recognize()
+    private Gesture Recognize()
     {
-        Gesture currentGesture = new Gesture();
+        Gesture newGesture = new Gesture();
         float currentMin = Mathf.Infinity;
 
         foreach (var gesture in gestures)
@@ -117,10 +143,15 @@ public class GestureDetector : MonoBehaviour
             if (!isDiscarded && sumDistance < currentMin)
             {
                 currentMin = sumDistance;
-                currentGesture = gesture;
+                newGesture = gesture;
             }
         }
 
-        return currentGesture;
+        return newGesture;
+    }
+
+    public void HoldingHandDebug()
+    {
+        Debug.Log("Holding Gesture " + currentGesture);
     }
 }

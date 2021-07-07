@@ -513,7 +513,7 @@ GameObject:
   - component: {fileID: 7799300322351113670}
   m_Layer: 0
   m_Name: Main Character
-  m_TagString: Untagged
+  m_TagString: MainCharacter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -565,7 +565,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2df57f086e7cd041bf7933b036d0576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDelay: 0.6
 --- !u!114 &5329162936494705491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,6 +577,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bbc4cefb1da402fa947a9d842e91e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  replaceableAttackAnim: {fileID: 0}
+  defaultAttackAnimSet: []
+  overrideController: {fileID: 0}
 --- !u!195 &1570313367753126389
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -20,4 +20,9 @@ public class PlayerManager : MonoBehaviour
     public GameObject player;
     public bool playerActive;
 
+    public void setPlayerActive(bool b)
+    {
+        playerActive = b;
+    }
+    
 }

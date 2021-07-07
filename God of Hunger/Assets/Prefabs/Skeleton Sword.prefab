@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 3181767644754562741}
   m_Layer: 0
   m_Name: Skeleton Sword
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -238,7 +238,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2df57f086e7cd041bf7933b036d0576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDelay: 0.6
 --- !u!114 &3810127707809511148
 MonoBehaviour:
   m_ObjectHideFlags: 0

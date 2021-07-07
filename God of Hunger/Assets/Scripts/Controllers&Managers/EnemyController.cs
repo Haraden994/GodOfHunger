@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
     private NavMeshAgent agent;
     private CharacterCombat combat;
     protected CharacterStats targetStats;
+    private bool isGrabbed;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerManager.instance.playerActive)
+        if (PlayerManager.instance.playerActive && !isGrabbed)
         {
             ReachMinimumDistance();
         }
@@ -65,5 +66,11 @@ public class EnemyController : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
+    }
+
+    public void Grabbed(bool grabbed)
+    {
+        isGrabbed = grabbed;
+        // Ragdoll effect
     }
 }
