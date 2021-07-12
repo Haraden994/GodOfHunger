@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+[RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(CharacterCombat))]
+[RequireComponent(typeof(CharacterStats))]
 public class EnemyController : MonoBehaviour
 {
 
@@ -12,13 +14,14 @@ public class EnemyController : MonoBehaviour
     private Transform target;
     private NavMeshAgent agent;
     private CharacterCombat combat;
-    protected CharacterStats targetStats;
+    private CharacterStats targetStats;
     private bool isGrabbed;
+    private bool isDead;
 
     // Start is called before the first frame update
     void Start()
     {
-        target = PlayerManager.instance.player.transform;
+        target = GameManager.instance.mainCharacter.transform;
         agent = GetComponent<NavMeshAgent>();
         combat = GetComponent<CharacterCombat>();
         targetStats = target.GetComponent<CharacterStats>();
@@ -27,7 +30,7 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerManager.instance.playerActive && !isGrabbed)
+        if (GameManager.instance.mainCharacterActive && !isDead)
         {
             ReachMinimumDistance();
         }
@@ -72,5 +75,12 @@ public class EnemyController : MonoBehaviour
     {
         isGrabbed = grabbed;
         // Ragdoll effect
+    }
+
+    public void Die()
+    {
+        isDead = true;
+        agent.enabled = false;
+        GetComponent<CapsuleCollider>().enabled = false;
     }
 }

@@ -504,6 +504,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7801547935765073414}
+  - component: {fileID: 4668560859621036177}
   - component: {fileID: 2519725623146950150}
   - component: {fileID: -2574386478238405465}
   - component: {fileID: 5329162936494705491}
@@ -534,6 +535,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4668560859621036177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7801547935764845156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1826b27cdd093a44a885018e621ba51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2519725623146950150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,7 +559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5274aa5202b5b14492a3855e54109f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 1000
   damage:
     baseValue: 10
   attackSpeed:
@@ -577,8 +590,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bbc4cefb1da402fa947a9d842e91e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  replaceableAttackAnim: {fileID: 0}
-  defaultAttackAnimSet: []
+  replaceableAttackAnim: {fileID: -203655887218126122, guid: e83fa06418735a3468bc407b7b66f750, type: 3}
+  defaultAttackAnimSet:
+  - {fileID: -203655887218126122, guid: e83fa06418735a3468bc407b7b66f750, type: 3}
+  - {fileID: -203655887218126122, guid: fdea0dbe5483c03469ea56619ed56a52, type: 3}
+  - {fileID: -203655887218126122, guid: 9be37a279b01de949969638d31c847ba, type: 3}
   overrideController: {fileID: 0}
 --- !u!195 &1570313367753126389
 NavMeshAgent:
@@ -590,11 +606,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.2
-  m_Speed: 1
-  m_Acceleration: 3
+  m_Speed: 0.8
+  m_Acceleration: 2
   avoidancePriority: 50
   m_AngularSpeed: 200
-  m_StoppingDistance: 0.35
+  m_StoppingDistance: 0.65
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -1154,43 +1170,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4bc71c6d7f27365469c657cde69dea22, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.084
+      value: 0.1016
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4bc71c6d7f27365469c657cde69dea22, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.079
+      value: 0.0896
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4bc71c6d7f27365469c657cde69dea22, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.039
+      value: 0.0619
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4bc71c6d7f27365469c657cde69dea22, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7933644
+      value: 0.7993826
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4bc71c6d7f27365469c657cde69dea22, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.13500568
+      value: -0.17892048
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4bc71c6d7f27365469c657cde69dea22, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.049599156
+      value: 0.05815702
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4bc71c6d7f27365469c657cde69dea22, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.5915119
+      value: 0.5706073
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4bc71c6d7f27365469c657cde69dea22, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -15.837
+      value: -20.635
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4bc71c6d7f27365469c657cde69dea22, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -4.831
+      value: -6.825
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4bc71c6d7f27365469c657cde69dea22, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 74.087
+      value: 72.283
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4bc71c6d7f27365469c657cde69dea22, type: 3}
       propertyPath: m_Name

@@ -10,7 +10,7 @@ public class CharacterStats : MonoBehaviour
     public Stat attackSpeed;
     public Stat armor;
 
-    void Awake()
+    protected virtual void Awake()
     {
         currentHealth = maxHealth;
     }

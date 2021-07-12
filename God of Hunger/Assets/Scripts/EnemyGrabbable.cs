@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using OculusSampleFramework;
 using UnityEngine;
 
 [RequireComponent(typeof(EnemyController))]
-public class EnemyGrabbable : OVRGrabbable
+public class EnemyGrabbable : DistanceGrabbable
 {
     private EnemyController enemyController;
     

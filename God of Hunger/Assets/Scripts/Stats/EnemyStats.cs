@@ -5,14 +5,25 @@ using UnityEngine.EventSystems;
 
 public class EnemyStats : CharacterStats
 {
+    public bool alive;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        alive = true;
+    }
 
     public override void Die()
     {
         base.Die();
-        
-        // Death effect
+        alive = false;
+        GameManager.instance.EnemyDead(gameObject);
 
-        Destroy(gameObject, 2.0f);
+        // Death effect
+        GetComponent<Animator>().SetTrigger("dead");
+        GetComponent<EnemyController>().Die();
+
+        //Destroy(gameObject, 2.0f);
     }
     
 }
