@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class CharacterStats : MonoBehaviour
@@ -10,19 +11,39 @@ public class CharacterStats : MonoBehaviour
     public Stat attackSpeed;
     public Stat armor;
 
+    private HealthBar healthBar;
+
     protected virtual void Awake()
     {
         currentHealth = maxHealth;
+    }
+
+    protected virtual void Start()
+    {
+        healthBar = GetComponent<HealthBar>();
     }
 
     public void TakeDamage(float damage)
     {
         damage -= armor.GetValue();
         damage = Mathf.Clamp(damage, 0, float.MaxValue);
-        
-        currentHealth -= damage;
-        Debug.Log(transform.name + " takes " + damage + " damage.");
 
+        if (healthBar != null)
+        {
+            healthBar.ResetLerpTimer();
+        }
+        
+        if (damage > currentHealth)
+        {
+            currentHealth = 0;
+        }
+        else
+        {
+            currentHealth -= damage;
+        }
+
+        Debug.Log(transform.name + " takes " + damage + " damage.");
+        
         if (currentHealth <= 0)
         {
             Die();
@@ -31,8 +52,18 @@ public class CharacterStats : MonoBehaviour
 
     public virtual void Die()
     {
+        if (healthBar != null)
+        {
+            StartCoroutine(HideHealthBar());
+        }
         // Ready for override.
         Debug.Log(transform.name + " died.");
+    }
+
+    public IEnumerator HideHealthBar()
+    {
+        yield return new WaitForSeconds(1f);
+        healthBar.healthBarObject.SetActive(false);
     }
     
 }

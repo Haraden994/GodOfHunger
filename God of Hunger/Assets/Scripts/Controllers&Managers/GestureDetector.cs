@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.Events;
+using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
 
 [System.Serializable]
@@ -28,12 +29,14 @@ public class GestureDetector : MonoBehaviour
     private Gesture previousGesture;
     private bool bonesInitialized;
     private bool gestureChange;
-
-    private Gesture currentGesture;
+    private MyHand hand;
+    
+    public Gesture currentGesture { get; private set; }
     
     // Start is called before the first frame update
     private void Start()
     {
+        hand = skeleton.gameObject.GetComponent<MyHand>();
         StartCoroutine(BonesDelay(2.5f, InitializeBones));
         
         previousGesture = new Gesture();
@@ -56,7 +59,7 @@ public class GestureDetector : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (bonesInitialized)
+        if (bonesInitialized && !hand.IsSystemGestureInProgress)
         {
             if (recMode)
             {
@@ -66,8 +69,10 @@ public class GestureDetector : MonoBehaviour
                         Save();
                 }
                 else
+                {
                     if (Input.GetKeyDown(KeyCode.RightControl))
                         Save();
+                }
             }
 
             currentGesture = Recognize();
@@ -81,12 +86,14 @@ public class GestureDetector : MonoBehaviour
                     gestureChange = true;
                     Debug.Log("New Gesture Found: " + currentGesture.name);
                     previousGesture = currentGesture;
-                    currentGesture.onRecognized.Invoke();
+                    if(previousGesture.onRecognized != null)
+                        currentGesture.onRecognized.Invoke();
                 }
                 else
                 {
                     Debug.Log("OnHold");
-                    currentGesture.onHold.Invoke();
+                    if(previousGesture.onHold != null)
+                        currentGesture.onHold.Invoke();
                 }
             }
             else
@@ -95,7 +102,8 @@ public class GestureDetector : MonoBehaviour
                 {
                     Debug.Log("OnChange");
                     gestureChange = false;
-                    previousGesture.onChange.Invoke();
+                    if(previousGesture.onChange != null)
+                        previousGesture.onChange.Invoke();
                     previousGesture = new Gesture();
                 }
             }
@@ -120,13 +128,14 @@ public class GestureDetector : MonoBehaviour
 
     private Gesture Recognize()
     {
-        Gesture newGesture = new Gesture();
+        Gesture recognizedGesture = new Gesture();
         float currentMin = Mathf.Infinity;
 
         foreach (var gesture in gestures)
         {
             float sumDistance = 0;
             bool isDiscarded = false;
+            
             for (int i = 0; i < fingerBones.Count; i++)
             {
                 Vector3 currentData = skeleton.transform.InverseTransformPoint(fingerBones[i].Transform.position);
@@ -143,11 +152,11 @@ public class GestureDetector : MonoBehaviour
             if (!isDiscarded && sumDistance < currentMin)
             {
                 currentMin = sumDistance;
-                newGesture = gesture;
+                recognizedGesture = gesture;
             }
         }
-
-        return newGesture;
+        
+        return recognizedGesture;
     }
 
     public void HoldingHandDebug()

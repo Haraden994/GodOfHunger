@@ -5,9 +5,8 @@ using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.Events;
 
-public class GameInteractable : MonoBehaviour
+public class FarFieldInteractable : MonoBehaviour
 {
-    [SerializeField] private GameObject _interactable;
     [SerializeField] private SelectionCylinder _selectionCylinder;
     
     [SerializeField] private UnityEvent actionEvent;
@@ -18,9 +17,8 @@ public class GameInteractable : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        Assert.IsNotNull(_interactable);
         Assert.IsNotNull(_selectionCylinder);
-        _interactable.GetComponent<ButtonController>().InteractableStateChanged.AddListener(InitiateEvent);
+        GetComponent<ButtonController>().InteractableStateChanged.AddListener(InitiateEvent);
     }
 
     private void InitiateEvent(InteractableStateArgs obj)
