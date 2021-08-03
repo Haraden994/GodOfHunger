@@ -5,6 +5,17 @@ using UnityEngine;
 [RequireComponent(typeof(GestureDetector))]
 public class GestureManager : MonoBehaviour
 {
+    #region Singleton
+
+    public static GestureManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    #endregion
+    
     public GameObject leftHand;
     public GameObject rightHand;
     
