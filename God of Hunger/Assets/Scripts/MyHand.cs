@@ -9,6 +9,9 @@ public class MyHand : OVRHand
 
     public GameObject sideHandTools;
 
+    public Vector3 lastPos;
+    public Quaternion lastRot;
+
     private bool trackingLost;
 
     // Start is called before the first frame update
@@ -18,8 +21,9 @@ public class MyHand : OVRHand
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
+        base.Update();
         /*if (!IsTracked)
         {
             handPlaceholder.SetActive(true);
@@ -31,6 +35,9 @@ public class MyHand : OVRHand
             handPlaceholder.SetActive(false);
         }*/
 
+        lastPos = transform.position;
+        lastRot = transform.rotation;
+        
         if (IsSystemGestureInProgress)
         {
             sideHandTools.SetActive(true);

@@ -20,8 +20,39 @@ namespace OculusSampleFramework
 	/// </summary>
 	public class InteractableToolsCreator : MonoBehaviour
 	{
+		#region Singleton
+		
+		private static InteractableToolsCreator _instance;
+		
+		public static InteractableToolsCreator Instance
+		{
+			get
+			{
+				if (_instance == null)
+				{
+					var instances = FindObjectsOfType<InteractableToolsCreator>();
+					if (instances.Length > 0)
+					{
+						_instance = instances[0];
+						// remove extras, if any
+						for (int i = 1; i < instances.Length; i++)
+						{
+							GameObject.Destroy(instances[i].gameObject);
+						}
+					}
+				}
+
+				return _instance;
+			}
+		}
+		
+		#endregion
+		
 		[SerializeField] private Transform[] LeftHandTools = null;
 		[SerializeField] private Transform[] RightHandTools = null;
+
+		[HideInInspector] public bool leftOK;
+		[HideInInspector] public bool rightOK;
 
 		private void Awake()
 		{
@@ -62,6 +93,11 @@ namespace OculusSampleFramework
 
 				AttachToolToHandTransform(toolObject, isRightHand);
 			}
+
+			if (isRightHand)
+				rightOK = true;
+			else
+				leftOK = true;
 		}
 
 		private void AttachToolToHandTransform(Transform tool, bool isRightHanded)

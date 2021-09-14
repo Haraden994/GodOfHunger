@@ -73,7 +73,7 @@ public class OVRHand : MonoBehaviour,
 		GetHandState(OVRPlugin.Step.Render);
 	}
 
-	private void Update()
+	protected virtual void Update()
 	{
 		GetHandState(OVRPlugin.Step.Render);
 	}

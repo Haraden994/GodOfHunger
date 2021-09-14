@@ -8,7 +8,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(CharacterStats))]
 public class EnemyController : MonoBehaviour
 {
-
+    public GameObject interactable;
     public float lookRadius = 10f;
 
     private Transform target;
@@ -79,6 +79,7 @@ public class EnemyController : MonoBehaviour
 
     public void Die()
     {
+        interactable.SetActive(false);
         isDead = true;
         agent.enabled = false;
         GetComponent<CapsuleCollider>().enabled = false;

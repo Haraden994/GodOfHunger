@@ -80,8 +80,9 @@ namespace OculusSampleFramework
 		}
 
 		private Collider[] _collidersOverlapped = new Collider[NUM_COLLIDERS_TO_TEST];
-
-		private Interactable _currInteractableCastedAgainst = null;
+		
+		[HideInInspector]
+		public Interactable _currInteractableCastedAgainst = null;
 		private float _coneAngleReleaseDegrees;
 
 		private RaycastHit[] _primaryHits = new RaycastHit[NUM_MAX_PRIMARY_HITS];

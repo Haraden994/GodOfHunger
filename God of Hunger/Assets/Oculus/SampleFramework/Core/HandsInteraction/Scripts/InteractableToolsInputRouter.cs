@@ -23,6 +23,8 @@ namespace OculusSampleFramework
 	{
 		private static InteractableToolsInputRouter _instance;
 		private bool _leftPinch, _rightPinch;
+		
+		[HideInInspector] public bool toolsInitialized;
 
 		public static InteractableToolsInputRouter Instance
 		{
@@ -105,6 +107,9 @@ namespace OculusSampleFramework
 
 		private void Update()
 		{
+			if (!toolsInitialized && InteractableToolsCreator.Instance.leftOK && InteractableToolsCreator.Instance.rightOK)
+				toolsInitialized = true;
+			
 			if (!HandsManager.Instance.IsInitialized())
 			{
 				return;
@@ -202,6 +207,31 @@ namespace OculusSampleFramework
 					tool.EnableState = enableState;
 				}
 			}
+		}
+
+		public RayTool GetRayTool(bool left)
+		{
+			GameObject rayTool = null;
+			
+			if (left)
+			{
+				foreach (var tool in _leftHandFarTools)
+				{
+					rayTool = tool.gameObject;
+				}
+			}
+			else
+			{
+				foreach (var tool in _rightHandFarTools)
+				{
+					rayTool = tool.gameObject;
+				}
+			}
+
+			if (rayTool != null)
+				return rayTool.GetComponent<RayTool>();
+			
+			return null;
 		}
 	}
 }

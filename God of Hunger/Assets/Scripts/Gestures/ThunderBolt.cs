@@ -1,18 +1,73 @@
 using System.Collections;
-using System.Collections.Generic;
+using OculusSampleFramework;
 using UnityEngine;
 
-public class ThunderBolt : MonoBehaviour
+
+public class ThunderBolt : ChargedGesture
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Transform facing;
+    [SerializeField] private float velocityDirectionThreshold = 0.4f;
+    [SerializeField] private float velocityTriggerThreshold = 1.2f;
+
+    private Vector3 velocity;
+    private float dot;
+    private float magnitude;
+    private bool once = true;
+    
+    private CharacterStats targetStats;
+
+    private int currentCharges;
+
+    protected override void CheckTriggerAction()
     {
-        
+        velocity = (hand.transform.position - hand.lastPos) / Time.fixedDeltaTime;
+        dot = Vector3.Dot(facing.forward, velocity.normalized);
+        magnitude = velocity.magnitude;
+
+        Interactable currentTarget = rayTool._currInteractableCastedAgainst;
+        if (currentTarget != null)
+        {
+            targetStats = currentTarget.GetComponentInParent<CharacterStats>();
+
+            if (once && magnitude >= velocityTriggerThreshold && dot >= velocityDirectionThreshold)
+            {
+                targetStats.TakeDamage(PowersManager.instance.tbDamage);
+                currentCharges--;
+                once = false;
+                StartCoroutine(Delay(0.4f));
+            }
+
+            if (currentCharges <= 0)
+            {
+                charged = false;
+                chargedPS.Stop();
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator Delay(float delay)
     {
-        
+        yield return new WaitForSeconds(delay);
+        once = true;
+    }
+    
+    public override void OnGestureHold()
+    {
+        base.OnGestureHold();
+        if (!charged)
+        {
+            if(!chargingPS.isPlaying)
+                chargingPS.Play();
+            
+            charging += Time.deltaTime;
+            if (charging >= PowersManager.instance.tbChargeTime)
+            {
+                currentCharges = PowersManager.instance.tbCharges;
+                chargingPS.Stop();
+                chargedPS.Play();
+                charged = true;
+                charging = 0.0f;
+            }
+        }
     }
 }

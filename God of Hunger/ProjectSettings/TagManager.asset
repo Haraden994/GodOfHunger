@@ -6,6 +6,8 @@ TagManager:
   tags:
   - MainCharacter
   - Enemy
+  - Left
+  - Right
   layers:
   - Default
   - TransparentFX

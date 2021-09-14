@@ -84,14 +84,14 @@ public class GestureDetector : MonoBehaviour
                 if (!currentGesture.Equals(previousGesture))
                 {
                     gestureChange = true;
-                    Debug.Log("New Gesture Found: " + currentGesture.name);
+                    //Debug.Log("New Gesture Found: " + currentGesture.name);
                     previousGesture = currentGesture;
                     if(previousGesture.onRecognized != null)
                         currentGesture.onRecognized.Invoke();
                 }
                 else
                 {
-                    Debug.Log("OnHold");
+                    //Debug.Log("OnHold");
                     if(previousGesture.onHold != null)
                         currentGesture.onHold.Invoke();
                 }
@@ -100,7 +100,7 @@ public class GestureDetector : MonoBehaviour
             {
                 if (gestureChange)
                 {
-                    Debug.Log("OnChange");
+                    //Debug.Log("OnChange");
                     gestureChange = false;
                     if(previousGesture.onChange != null)
                         previousGesture.onChange.Invoke();
