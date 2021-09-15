@@ -28,6 +28,10 @@ public class ThunderBolt : ChargedGesture
         if (currentTarget != null)
         {
             targetStats = currentTarget.GetComponentInParent<CharacterStats>();
+            
+            // Defocus target if dies
+            if (targetStats.currentHealth <= 0.0f)
+                rayTool._currInteractableCastedAgainst = null;
 
             if (once && magnitude >= velocityTriggerThreshold && dot >= velocityDirectionThreshold)
             {
@@ -39,6 +43,12 @@ public class ThunderBolt : ChargedGesture
 
             if (currentCharges <= 0)
             {
+                if (rayTool != null)
+                {
+                    rayTool.targetType = null;
+                    rayTool._currInteractableCastedAgainst = null;
+                }
+
                 charged = false;
                 chargedPS.Stop();
             }
@@ -62,6 +72,10 @@ public class ThunderBolt : ChargedGesture
             charging += Time.deltaTime;
             if (charging >= PowersManager.instance.tbChargeTime)
             {
+                // if charged the ray tool must select the proper targets
+                if(rayTool != null)
+                    rayTool.targetType = "Enemy";
+                    
                 currentCharges = PowersManager.instance.tbCharges;
                 chargingPS.Stop();
                 chargedPS.Play();

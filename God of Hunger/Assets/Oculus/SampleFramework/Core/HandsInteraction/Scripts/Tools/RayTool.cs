@@ -30,6 +30,8 @@ namespace OculusSampleFramework
 		[Range(0.0f, 45.0f)] [SerializeField] private float _coneAngleDegrees = 20.0f;
 		[SerializeField] private float _farFieldMaxDistance = 5f;
 
+		[HideInInspector] public string targetType;
+
 		public override InteractableToolTags ToolTags
 		{
 			get
@@ -228,7 +230,13 @@ namespace OculusSampleFramework
 				targetInteractable = FindInteractableViaConeTest(rayOrigin, rayDirection);
 			}
 
-			return targetInteractable;
+			if (targetType != null && targetInteractable != null)
+			{
+				if (targetInteractable.transform.parent.CompareTag(targetType))
+					return targetInteractable;
+			}
+			
+			return null;
 		}
 
 		/// <summary>
