@@ -30,7 +30,7 @@ namespace OculusSampleFramework
 		[Range(0.0f, 45.0f)] [SerializeField] private float _coneAngleDegrees = 20.0f;
 		[SerializeField] private float _farFieldMaxDistance = 5f;
 
-		[HideInInspector] public string targetType;
+		[HideInInspector] public string targetType = null;
 
 		public override InteractableToolTags ToolTags
 		{

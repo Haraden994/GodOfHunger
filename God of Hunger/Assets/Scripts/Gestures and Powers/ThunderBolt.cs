@@ -43,6 +43,7 @@ public class ThunderBolt : ChargedGesture
 
             if (currentCharges <= 0)
             {
+                powerSelector.PowerExpired();
                 if (rayTool != null)
                 {
                     rayTool.targetType = null;
@@ -72,6 +73,8 @@ public class ThunderBolt : ChargedGesture
             charging += Time.deltaTime;
             if (charging >= PowersManager.instance.tbChargeTime)
             {
+                powerSelector.PowerCharged(this);
+                
                 // if charged the ray tool must select the proper targets
                 if(rayTool != null)
                     rayTool.targetType = "Enemy";
