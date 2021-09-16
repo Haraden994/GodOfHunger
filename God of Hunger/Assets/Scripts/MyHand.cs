@@ -9,8 +9,8 @@ public class MyHand : OVRHand
 
     public GameObject sideHandTools;
 
-    public Vector3 lastPos;
-    public Quaternion lastRot;
+    [HideInInspector] public Vector3 lastPos;
+    [HideInInspector] public Quaternion lastRot;
 
     private bool trackingLost;
 

@@ -20,6 +20,12 @@ public class PowersManager : MonoBehaviour
     public int tbCharges;
     public float tbChargeTime;
     public float tbDamage;
+
+    [Header("Magic Shield")] 
+    public int msCharges;
+    public float msChargeTime;
+    public float msDuration;
+    
     
     // Start is called before the first frame update
     void Start()
