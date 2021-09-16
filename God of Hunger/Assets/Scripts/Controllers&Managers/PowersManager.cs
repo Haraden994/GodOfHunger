@@ -25,6 +25,8 @@ public class PowersManager : MonoBehaviour
     public int msCharges;
     public float msChargeTime;
     public float msDuration;
+    public float msDamageMultiplierReduction;
+    public float msHPS;
     
     
     // Start is called before the first frame update

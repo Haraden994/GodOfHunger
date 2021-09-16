@@ -495,6 +495,8 @@ MonoBehaviour:
     baseValue: 1
   armor:
     baseValue: 0
+  incomingDamageMultiplier:
+    baseValue: 0
   alive: 0
 --- !u!114 &3637757176272780991
 MonoBehaviour:
@@ -1480,6 +1482,14 @@ PrefabInstance:
     - target: {fileID: 1791741129855501259, guid: f2f8a71a33b02794aa1895e01906ebf4, type: 3}
       propertyPath: m_Name
       value: SelectionCylinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791741130174598185, guid: f2f8a71a33b02794aa1895e01906ebf4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791741130174598198, guid: f2f8a71a33b02794aa1895e01906ebf4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2f8a71a33b02794aa1895e01906ebf4, type: 3}

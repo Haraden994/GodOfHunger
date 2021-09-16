@@ -5,6 +5,15 @@ public class ChargedGesture : MonoBehaviour
 {
     [SerializeField] protected ParticleSystem chargingPS;
     [SerializeField] protected ParticleSystem chargedPS;
+    
+    [SerializeField] protected Transform facing;
+    [SerializeField] protected float velocityDirectionThreshold = 0.4f;
+    [SerializeField] protected float velocityTriggerThreshold = 1.2f;
+    
+    protected Vector3 velocity;
+    protected float dot;
+    protected float magnitude;
+    protected Interactable currentTarget;
 
     protected bool iamLeft;
     protected RayTool rayTool;
@@ -34,7 +43,11 @@ public class ChargedGesture : MonoBehaviour
 
     protected virtual void CheckTriggerAction()
     {
+        velocity = (hand.transform.position - hand.lastPos) / Time.fixedDeltaTime;
+        dot = Vector3.Dot(facing.forward, velocity.normalized);
+        magnitude = velocity.magnitude;
         
+        currentTarget = rayTool._currInteractableCastedAgainst;
     }
 
     public virtual void OnGestureRecognized()
@@ -45,7 +58,7 @@ public class ChargedGesture : MonoBehaviour
             powerSelector.ChargingPower();
             //Debug.Log(gameObject.name + " charging!");
             charging = 0.0f;
-            chargingPS.Play();
+            chargingPS.gameObject.SetActive(true);
         }
     }
 
@@ -58,7 +71,7 @@ public class ChargedGesture : MonoBehaviour
     {
         if (!charged)
         {
-            chargingPS.Stop();
+            chargingPS.gameObject.SetActive(false);
             charging = 0.0f;
             powerSelector.ChargingInterrupted();
             //Debug.Log(gameObject.name + " interrupted!");
@@ -67,24 +80,24 @@ public class ChargedGesture : MonoBehaviour
 
     public void Pause()
     {
-        chargedPS.Stop();
+        chargedPS.gameObject.SetActive(false);
         paused = true;
     }
 
     public void Resume()
     {
-        chargedPS.Play();
+        chargedPS.gameObject.SetActive(true);
         paused = false;
     }
 
     public void AnotherPowerCharged()
     {
+        paused = false;
         charged = false;
-        chargedPS.Stop();
+        chargedPS.gameObject.SetActive(false);
         
         if (rayTool != null)
         {
-            rayTool.targetType = null;
             rayTool._currInteractableCastedAgainst = null;
         }
     }

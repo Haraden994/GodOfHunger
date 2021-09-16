@@ -199,8 +199,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rayToolView: {fileID: 114332492007034412}
-  _coneAngleDegrees: 15
+  _defaultConeAngleDegrees: 15
+  _coneAngleDegrees: 5
   _farFieldMaxDistance: 7
+  targetType: 
+  targetAcquired: 0
+  _currInteractableCastedAgainst: {fileID: 0}
 --- !u!1 &1416015005936930
 GameObject:
   m_ObjectHideFlags: 0

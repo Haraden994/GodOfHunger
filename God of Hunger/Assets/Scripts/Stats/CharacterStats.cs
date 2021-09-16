@@ -10,6 +10,7 @@ public class CharacterStats : MonoBehaviour
     public Stat damage;
     public Stat attackSpeed;
     public Stat armor;
+    public Stat incomingDamageMultiplier;
 
     private HealthBar healthBar;
 
@@ -26,6 +27,7 @@ public class CharacterStats : MonoBehaviour
     public void TakeDamage(float damage)
     {
         damage -= armor.GetValue();
+        damage = damage * incomingDamageMultiplier.GetValue();
         damage = Mathf.Clamp(damage, 0, float.MaxValue);
 
         if (healthBar != null)
