@@ -22,12 +22,12 @@ namespace OculusSampleFramework
 	{
 		private const float MINIMUM_RAY_CAST_DISTANCE = 0.8f;
 		private const float COLLIDER_RADIUS = 0.01f;
-		private const int NUM_MAX_PRIMARY_HITS = 10;
-		private const int NUM_MAX_SECONDARY_HITS = 25;
+		private const int NUM_MAX_PRIMARY_HITS = 100;
+		private const int NUM_MAX_SECONDARY_HITS = 250;
 		private const int NUM_COLLIDERS_TO_TEST = 20;
 
 		[SerializeField] private RayToolView _rayToolView = null;
-		[Range(0.0f, 45.0f)] public float _defaultConeAngleDegrees = 5.0f;
+		// only for initialization
 		[Range(0.0f, 45.0f)] public float _coneAngleDegrees = 15.0f;
 		[SerializeField] private float _farFieldMaxDistance = 5f;
 
@@ -87,7 +87,7 @@ namespace OculusSampleFramework
 		
 		[HideInInspector]
 		public Interactable _currInteractableCastedAgainst = null;
-		private float _coneAngleReleaseDegrees;
+		[HideInInspector] public float _coneAngleReleaseDegrees;
 
 		private RaycastHit[] _primaryHits = new RaycastHit[NUM_MAX_PRIMARY_HITS];
 		private Collider[] _secondaryOverlapResults = new Collider[NUM_MAX_SECONDARY_HITS];
@@ -266,16 +266,17 @@ namespace OculusSampleFramework
 				{
 					continue;
 				}
+				
+				// skip if invalid tag
+				if (!currentInteractable.transform.parent.CompareTag(targetType))
+					continue;
 
 				var vectorToInteractable = currentInteractable.transform.position - rayOrigin;
 				var distanceToInteractable = vectorToInteractable.magnitude;
 				if (interactableCastedAgainst == null || distanceToInteractable < minDistance)
 				{
-					if (currentInteractable.transform.parent.CompareTag(targetType))
-					{
-						interactableCastedAgainst = currentInteractable;
-						minDistance = distanceToInteractable;
-					}
+					interactableCastedAgainst = currentInteractable;
+					minDistance = distanceToInteractable;
 				}
 			}
 
@@ -323,6 +324,12 @@ namespace OculusSampleFramework
 					continue;
 				}
 
+				Debug.Log(interactableComponent.transform.parent.name);
+				
+				// Skip if invalid tag
+				if (!interactableComponent.transform.parent.CompareTag(targetType))
+					continue;
+				
 				var vectorToInteractable = interactableComponent.transform.position - rayOrigin;
 				var distanceToInteractable = vectorToInteractable.magnitude;
 				vectorToInteractable /= distanceToInteractable;
@@ -335,11 +342,8 @@ namespace OculusSampleFramework
 
 				if (targetInteractable == null || distanceToInteractable < minDistance)
 				{
-					if (interactableComponent.transform.parent.CompareTag(targetType))
-					{
-						targetInteractable = interactableComponent;
-						minDistance = distanceToInteractable;
-					}
+					targetInteractable = interactableComponent;
+					minDistance = distanceToInteractable;
 				}
 			}
 

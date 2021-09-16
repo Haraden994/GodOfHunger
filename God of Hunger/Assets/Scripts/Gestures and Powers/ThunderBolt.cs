@@ -49,7 +49,7 @@ public class ThunderBolt : ChargedGesture
                 if (rayTool != null)
                 {
                     rayTool.targetAcquired = false;
-                    rayTool._coneAngleDegrees = rayTool._defaultConeAngleDegrees;
+                    rayTool._coneAngleReleaseDegrees = rayTool._coneAngleDegrees * 1.2f;
                     rayTool._currInteractableCastedAgainst = null;
                 }
 
@@ -105,7 +105,7 @@ public class ThunderBolt : ChargedGesture
                 {
                     rayTool.targetAcquired = true;
                     rayTool.targetType = "Enemy";
-                    rayTool._coneAngleDegrees = 10.0f;
+                    rayTool._coneAngleReleaseDegrees = 10.0f * 1.2f;
                 }
 
                 currentCharges = PowersManager.instance.tbCharges;

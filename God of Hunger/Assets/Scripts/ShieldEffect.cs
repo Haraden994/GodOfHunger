@@ -8,6 +8,8 @@ public class ShieldEffect : MonoBehaviour
     private float damageMultiplier;
     private bool characterInside;
     private ParticleSystem ps;
+    
+    public Transform center;
 
     [SerializeField] private ParticleSystem stars;
 
@@ -30,8 +32,12 @@ public class ShieldEffect : MonoBehaviour
     private IEnumerator DurationExpired(float duration)
     {
         yield return new WaitForSeconds(duration);
+        
+        GameObject mainCharacter = GameManager.instance.mainCharacter;
+        mainCharacter.GetComponent<MainCharacterController>().MagicShieldEnded();
         if(characterInside)
-            GameManager.instance.mainCharacter.GetComponent<CharacterStats>().incomingDamageMultiplier.RemoveModifier(damageMultiplier);
+            mainCharacter.GetComponent<CharacterStats>().incomingDamageMultiplier.RemoveModifier(damageMultiplier);
+        
         var main = ps.main;
         main.loop = false;
         var secondary = stars.main;

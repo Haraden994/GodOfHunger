@@ -27,11 +27,13 @@ public class MagicShield : ChargedGesture
                 instantiatedShield.transform.position = new Vector3(targetPosition.x, instantiatedShield.transform.position.y, targetPosition.z);
                 instantiatedShield.SetActive(true);
                 
+                GameManager.instance.mainCharacter.GetComponent<MainCharacterController>().MagicShieldSpawned(instantiatedShield);
+                
                 powerSelector.PowerExpired();
                 if (rayTool != null)
                 {
                     rayTool.targetAcquired = false;
-                    rayTool._coneAngleDegrees = rayTool._defaultConeAngleDegrees;
+                    rayTool._coneAngleReleaseDegrees = rayTool._coneAngleDegrees * 1.2f;
                     rayTool._currInteractableCastedAgainst = null;
                     
                     charged = false;
@@ -59,7 +61,7 @@ public class MagicShield : ChargedGesture
                 {
                     rayTool.targetAcquired = true;
                     rayTool.targetType = "Ground";
-                    rayTool._coneAngleDegrees = 5.0f;
+                    rayTool._coneAngleReleaseDegrees = 5.0f * 1.2f;
                 }
                 
                 chargingPS.gameObject.SetActive(false);
