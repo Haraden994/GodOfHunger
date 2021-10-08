@@ -1,18 +1,20 @@
 ManifestFileVersion: 0
-CRC: 1865847680
+CRC: 2377265650
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 10be30bffb23de70adf48329aedd92f4
+    Hash: 942454aa1be001c8bcce26d0738bc195
   TypeTreeHash:
     serializedVersion: 2
-    Hash: f7c57fd1ca4518b85cf4c37a31f64153
+    Hash: 2ba11fb4c91be63852684e44adadde6d
 HashAppended: 0
 ClassTypes:
 - Class: 28
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: b3d881e962d099f4a8eb492ef7e9a8c0, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: ad074644ff568a14187a3690cfbd7534, type: 3}
 - Class: 115
@@ -23,6 +25,7 @@ Assets:
 - Assets/Resources/ONSPSettings.asset
 - Assets/Oculus/VR/Resources/OVRMRUnlitTransparent.shader
 - Assets/Oculus/Avatar/Resources/FallbackTextures/fallback_diffuse_roughness_1024.png
+- Assets/Resources/OculusPlatformSettings.asset
 - Assets/Oculus/Avatar/Resources/FallbackTextures/fallback_normal_1024.tif
 - Assets/Oculus/Avatar/Resources/Materials/Expressive/Avatar_PC_SingleComponentExpressive.shader
 - Assets/Resources/OVRBuildConfig.asset

@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 342542287
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2dab760d1c9c7ced7136a70904f2bc88
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 410571ec3b2ffea48e2739c9247bf005
+HashAppended: 0
+ClassTypes:
+- Class: 238
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Scenes/prova/NavMesh.asset
+Dependencies: []

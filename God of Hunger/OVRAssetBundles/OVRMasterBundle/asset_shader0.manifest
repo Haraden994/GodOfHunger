@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3990620270
+CRC: 4161114076
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 62959ac2bef0aacf813b18404d3448c6
+    Hash: 1cf7a4f20f3e28492947fc7f51742cee
   TypeTreeHash:
     serializedVersion: 2
     Hash: 68c985bf88fecc38b460cdb825182138
@@ -13,5 +13,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Shaders/XingLightShader.shader
 - Assets/Oculus/SampleFramework/Core/HandsInteraction/Shaders/OculusSampleAlphaHandOutline.shader
 Dependencies: []

@@ -1,17 +1,19 @@
 ManifestFileVersion: 0
-CRC: 1669804260
+CRC: 1593870027
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0d904e4fe90d10afaed8c10c22477243
+    Hash: dfbfd40034b72b2d993cee60cc45f115
   TypeTreeHash:
     serializedVersion: 2
-    Hash: f64856a3d606b613608cbf22df470c60
+    Hash: d86b4d49cb6c942ed1b98c4d699b6502
 HashAppended: 0
 ClassTypes:
 - Class: 1
   Script: {instanceID: 0}
 - Class: 4
+  Script: {instanceID: 0}
+- Class: 20
   Script: {instanceID: 0}
 - Class: 21
   Script: {instanceID: 0}
@@ -23,8 +25,39 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Low Poly Ultimate Pack/M/- Meshes_M/Terrains_M/Worlds_M/terrain-world-plain.fbx
-- Assets/Low Poly Ultimate Pack/M/- Meshes_M/Fantasy_M/graveyard-wall-stone.fbx
+- Assets/Animated/Sword and Shield Pack/skeleton_Rig@Sword And Shield Slash.fbx
+- Assets/Low Poly Ultimate Pack/T/- Meshes_T/Fantasy_T/dungeon-pillar-stone-square.fbx
+- Assets/Animated/Great Sword Pack/great sword slash (4).fbx
+- Assets/Low Poly Ultimate Pack/T/- Meshes_T/Fantasy_T/dungeon-door-stone.fbx
+- Assets/Animated/Sword and Shield Pack/Sword And Shield Walk.fbx
+- Assets/Low Poly Ultimate Pack/T/- Meshes_T/Fantasy_T/dungeon-pillar-stone-edge.fbx
+- Assets/Animated/Great Sword Pack/great sword run (2).fbx
+- Assets/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/woman-metalhead_Rig.fbx
+- Assets/Low Poly Ultimate Pack/M/- Meshes_M/Fantasy_M/dungeon-floor-stone.fbx
+- Assets/Low Poly Ultimate Pack/T/- Meshes_T/Fantasy_T/dungeon-wall-stone.fbx
+- Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Models/SelectionCylinder.fbx
+- Assets/Animated/Great Sword Pack/great sword slash.fbx
+- Assets/Animated/Sword and Shield Pack/skeleton_Rig@Sword And Shield Slash (1).fbx
+- Assets/Low Poly Ultimate Pack/T/- Meshes_T/Fantasy_T/dungeon-floor-stone.fbx
+- Assets/Low Poly Ultimate Pack/T/- Meshes_T/Fantasy_T/dungeon-wall-window-stone.fbx
+- Assets/Animated/Great Sword Pack/great sword slash (3).fbx
+- Assets/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/skeleton_Rig.fbx
+- Assets/Animated/Great Sword Pack/great sword walk.fbx
+- Assets/Animated/Great Sword Pack/great sword idle.fbx
+- Assets/Animated/Sword and Shield Pack/skeleton_Rig@Sword And Shield Run.fbx
+- Assets/Animated/Sword and Shield Pack/sword and shield idle.fbx
+- Assets/Low Poly Ultimate Pack/T/- Meshes_T/Medieval_T/sword.fbx
+- Assets/Animated/Sword and Shield Pack/skeleton_Rig@Falling Back Death.fbx
 Dependencies: []

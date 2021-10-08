@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 119853417
+CRC: 3337526803
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 3fe0d0dcbf1d0cc7332885cc08c2e332
+    Hash: 85dbd79c339fe50e8339f889ecbf0940
   TypeTreeHash:
     serializedVersion: 2
     Hash: fdf6c57a251b9f6ec27bdd2fe01b033c
@@ -15,11 +15,7 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Oculus/VR/Meshes/OculusTouchForQuestAndRiftS/Animation/OculusTouchQuestAndRiftSLeftAnimation.controller
-- Assets/Oculus/VR/Meshes/OculusTouchForQuest2/Animation/OculusTouchQuest2LeftAnimation.controller
-- Assets/Oculus/VR/Meshes/OculusTouchForRift/Animation/OculusTouchRiftRightAnimation.controller
-- Assets/Oculus/VR/Meshes/OculusTouchForQuestAndRiftS/Animation/OculusTouchQuestAndRiftSRightAnimation.controller
-- Assets/Oculus/VR/Meshes/OculusTouchForQuest2/Animation/OculusTouchQuest2RightAnimation.controller
-- Assets/Oculus/VR/Meshes/OculusTouchForRift/Animation/OculusTouchRiftLeftAnimation.controller
+- Assets/Animated/EnemyAnimator.controller
+- Assets/Animated/MainCharacterAnimator.controller
 Dependencies:
-- C:/Users/night/Desktop/God of Hunger/OVRAssetBundles/OVRMasterBundle/asset_fbx0
+- C:/Users/night/Desktop/GodOfHunger/God of Hunger/OVRAssetBundles/OVRMasterBundle/asset_fbx0

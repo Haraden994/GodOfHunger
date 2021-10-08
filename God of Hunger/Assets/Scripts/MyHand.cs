@@ -38,13 +38,16 @@ public class MyHand : OVRHand
         lastPos = transform.position;
         lastRot = transform.rotation;
         
-        if (IsSystemGestureInProgress)
+        if (sideHandTools != null)
         {
-            sideHandTools.SetActive(true);
-        }
-        else
-        {
-            sideHandTools.SetActive(false);
+            if (IsSystemGestureInProgress)
+            {
+                sideHandTools.SetActive(true);
+            }
+            else
+            {
+                sideHandTools.SetActive(false);
+            }
         }
     }
 }

@@ -14845,18 +14845,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2519725623146950150, guid: cdbb80b3e6fc3a746970a2794c98e21a, type: 3}
-      propertyPath: maxHealth
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 2519725623146950150, guid: cdbb80b3e6fc3a746970a2794c98e21a, type: 3}
-      propertyPath: incomingDamageMultiplier
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2519725623146950150, guid: cdbb80b3e6fc3a746970a2794c98e21a, type: 3}
-      propertyPath: incomingDamageMultiplier.baseValue
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7801547935764845156, guid: cdbb80b3e6fc3a746970a2794c98e21a, type: 3}
       propertyPath: m_Name
       value: Main Character
@@ -15455,7 +15443,7 @@ MonoBehaviour:
   tbDamage: 10
   msCharges: 1
   msChargeTime: 3
-  msDuration: 1.5
+  msDuration: 2
   msDamageMultiplierReduction: -0.5
   msHPS: 0
 --- !u!1001 &1908962022
